@@ -1,0 +1,11 @@
+node_modules
+bin
+deploy
+.idea
+package.json
+package-lock.json
+storage
+
+tailwind.config.js
+jest.config.ts
+postcss.config.js

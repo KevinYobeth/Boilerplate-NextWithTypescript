@@ -1,0 +1,201 @@
+// module.exports = {
+//   root: true,
+//   parser: "babel-eslint",
+//   env: {
+//     node: true,
+//     browser: true,
+//     es6: true,
+//     commonjs: true
+//   },
+//   extends: [
+//     "eslint:recommended",
+//     "plugin:react/recommended",
+//     "plugin:prettier/recommended"
+//   ],
+//   parserOptions: {
+//     ecmaFeatures: {
+//       jsx: true
+//     },
+//     ecmaVersion: 2020
+//   },
+//   plugins: [
+//     "@next/eslint-plugin-next",
+//     "airbnb",
+//     "airbnb-typescript",
+//     "prettier"
+//   ],
+//   parserOptions: {
+//     project: "./tsconfig.json"
+//   },
+//   rules: {
+//     "import/prefer-default-export": 0,
+//     "no-console": "warn",
+//     "no-nested-ternary": 0,
+//     "no-underscore-dangle": 0,
+//     "no-unused-expressions": ["error", { allowTernary: true }],
+//     camelcase: 0,
+//     "react/self-closing-comp": 1,
+//     "react/jsx-filename-extension": [1, { extensions: [".js", "jsx"] }],
+//     "react/prop-types": 0,
+//     "react/destructuring-assignment": 0,
+//     "react/jsx-no-comment-textnodes": 0,
+//     "react/jsx-props-no-spreading": 0,
+//     "react/no-array-index-key": 0,
+//     "react/no-unescaped-entities": 0,
+//     "react/require-default-props": 0,
+//     "react/react-in-jsx-scope": 0,
+//     "linebreak-style": ["error", "unix"],
+//     semi: ["error", "never"],
+//     "prettier/prettier": [
+//       "error",
+//       { endOfLine: "off" },
+//       { usePrettierrc: true }
+//     ]
+//   }
+// };
+// {
+//   "root": true,
+//   "extends": [
+//     "airbnb",
+//     "airbnb-typescript",
+//     "prettier",
+//     "plugin:node/recommended"
+//   ],
+//   "plugins": [
+//     "prettier",
+//     "@next/eslint-plugin-next"
+//   ],
+//   "rules": {
+//     "prettier/prettier": "error",
+//     "no-unused-vars": "error",
+//     "no-console": "off",
+//     "func-names": "off",
+//     "no-process-exit": "off",
+//     "object-shorthand": "off",
+//     "class-methods-use-this": "off",
+//     "react/react-in-jsx-scope": "off",
+//     "react/self-closing-comp": 1,
+//     "react/jsx-filename-extension": [
+//       1,
+//       {
+//         "extensions": [
+//           ".ts",
+//           "tsx"
+//         ]
+//       }
+//     ],
+//     "react/prop-types": "off",
+//     "react/destructuring-assignment": "off",
+//     "react/jsx-no-comment-textnodes": "off",
+//     "react/jsx-props-no-spreading": "off",
+//     "react/no-array-index-key": "off",
+//     "react/no-unescaped-entities": "off",
+//     "react/require-default-props": "off",
+//     "node/no-unsupported-features/es-syntax": [
+//       "error",
+//       {
+//         "ignores": [
+//           "modules"
+//         ]
+//       }
+//     ]
+//     // "node/no-missing-import": [
+//     //   "error",
+//     //   {
+//     //     "resolvePaths": [
+//     //       "/path/to/a/modules/directory"
+//     //     ],
+//     //     "tryExtensions": [
+//     //       ".js",
+//     //       ".json",
+//     //       ".node"
+//     //     ]
+//     //   }
+//     // ]
+//   },
+//   "parserOptions": {
+//     "project": "./tsconfig.json"
+//   },
+//   "settings": {
+//     "node": {
+//       "resolvePaths": [],
+//       "tryExtensions": [
+//         ".ts",
+//         ".tsx"
+//       ]
+//     }
+//   }
+// }
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "@next/eslint-plugin-next"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [
+        ".ts",
+        ".tsx"
+      ]
+    }
+  },
+  "rules": {
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "implicit-arrow-linebreak": "off",
+    "object-curly-newline": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "arrow": true,
+        "return": true,
+        "declaration": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ],
+    "jsx-a11y/no-autofocus": [
+      0,
+      {
+        "ignoreNonDOM": true
+      }
+    ]
+  }
+}

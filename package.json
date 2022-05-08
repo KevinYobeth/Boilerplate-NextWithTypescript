@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint . --ext .tsx,.ts"
+  },
+  "engines": {
+    "node": ">=8.3.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "axios": "^0.21.1",
+    "lodash": "^4.17.21",
     "next": "^12.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,15 +24,25 @@
     "@babel/eslint-parser": "^7.12.1",
     "@next/eslint-plugin-next": "^10.0.4",
     "@tailwindcss/forms": "^0.4.0",
-    "autoprefixer": "^10.4.2",
+    "@types/node": "^17.0.31",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "autoprefixer": "10.4.5",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.17.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-next": "^0.0.0",
-    "eslint-plugin-prettier": "^3.3.0",
-    "eslint-plugin-react": "^7.22.0",
-    "postcss": "^8.4.6",
-    "prettier": "2.2.1",
-    "tailwindcss": "^3.0.22"
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-next": "0.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.10",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4"
   }
 }
